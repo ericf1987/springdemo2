@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context" xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!-- 今天在配置Spring的component-scan时，
+        发现了一个有趣的问题。就是在指定base-package时，
+        如果使用了星号通配符*，有时会出现类扫描不到的情况。
+        具体见
+        org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider
+        packageSearchPath默认追加 /**/*.class -->
+    <context:component-scan base-package="com.foundersc.crm.**"/>
+
+
+</beans>

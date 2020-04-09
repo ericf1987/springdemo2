@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.foundersc.crm.customer.mapper.CustMapper">
+
+    <sql id="Base_Column_List">
+        co.customer_no customerNo, co.cust_name custName, co.all_asset allAsset
+    </sql>
+
+    <select id="queryCustomerByNo"
+            parameterType="java.lang.String"
+            resultType="com.foundersc.crm.customer.bean.Customer">
+        select
+        <include refid="Base_Column_List" />
+        from cc.tb_cust_overview co
+        where co.customer_no = rpad(#{customerNo}, 20, ' ')
+    </select>
+
+</mapper>
