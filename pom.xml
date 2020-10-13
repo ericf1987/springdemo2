@@ -38,7 +38,7 @@
         <aspectjweaver.version>1.9.1</aspectjweaver.version>
         <lombok.version>1.18.8</lombok.version>
         <mockito.core.version>2.23.4</mockito.core.version>
-        <junit.version>4.12</junit.version>
+        <junit.version>4.13.1</junit.version>
 
         <ognl.version>3.2.6</ognl.version>
 
