@@ -44,7 +44,7 @@
 
         <!-- log -->
         <slf4j.version>1.7.25</slf4j.version>
-        <log4j-core.version>2.11.0</log4j-core.version>
+        <log4j-core.version>2.15.0</log4j-core.version>
         <commons-logging.version>1.2</commons-logging.version>
         <slf4j-log4j12.version>1.7.25</slf4j-log4j12.version>
 
