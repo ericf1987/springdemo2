@@ -29,7 +29,7 @@
         <jdk.version>1.8</jdk.version>
         <tkmapper.version>4.0.3</tkmapper.version>
         <poi.version>3.17</poi.version>
-        <spring.framework.version>5.2.4.RELEASE</spring.framework.version>
+        <spring.framework.version>5.3.19</spring.framework.version>
         <mybatis.version>3.4.6</mybatis.version>
         <mybatis-spring.version>1.3.2</mybatis-spring.version>
         <jackson-databind.version>2.9.6</jackson-databind.version>
